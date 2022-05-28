@@ -10,6 +10,8 @@
     "postinstall": "npm list -g pm2@latest || npm install pm2@latest -g",
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "start": "ts-node src/main.ts",
+    "start:dev": "tsnd --respawn --transpile-only src/main.ts",
     "start:prod": "pm2-runtime start ecosystem.config.js --env production",
     "test": "jest",
     "test:cov": "jest --coverage",
@@ -43,6 +45,8 @@
     "prettier": "2.6.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.2"
   },
   "lint-staged": {
