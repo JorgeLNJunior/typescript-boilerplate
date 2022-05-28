@@ -2,14 +2,15 @@
   "name": "typescript-boilerplate",
   "version": "0.0.0",
   "description": "a complete typescript boilerplate",
-  "main": "dist/main.js",
+  "main": "dist/src/main.js",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
+    "postinstall": "npm list -g pm2@latest || npm install pm2@latest -g",
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "start": "node .",
+    "start:prod": "pm2-runtime start ecosystem.config.js --env production",
     "test": "jest",
     "test:cov": "jest --coverage",
     "prepare": "husky install"
