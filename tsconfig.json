@@ -108,10 +108,6 @@
     "node_modules",
     "**/__tests__/**",
     "**/*.spec.ts",
-    "jest.config.js",
-    "ecosystem.config",
-    "dist",
-    ".temp",
-    ".github"
+    "**/*.test.ts"
   ]
 }
