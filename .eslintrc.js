@@ -11,7 +11,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 'ES2021',
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'prettier'],
@@ -27,7 +27,6 @@ module.exports = {
       'error',
       {
         singleQuote: true,
-        parser: 'flow',
         semi: false,
         trailingComma: 'none'
       }
