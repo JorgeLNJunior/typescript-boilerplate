@@ -53,6 +53,7 @@
     "*.{ts,js}": "eslint --cache --fix"
   },
   "dependencies": {
+    "@ptkdev/logger": "^1.8.0",
     "dotenv": "^16.0.1"
   }
 }

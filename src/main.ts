@@ -1,13 +1,16 @@
 import http from 'http'
 import ConfigService from './services/config.service'
+import Logger from '@ptkdev/logger'
 
 export default class Main {
   private port: number
   private configService: ConfigService
+  private logger: Logger
 
   constructor() {
     this.configService = new ConfigService()
     this.port = this.configService.getEnv<number>('PORT')
+    this.logger = new Logger()
   }
 
   startServer() {
@@ -35,18 +38,19 @@ export default class Main {
           })
         )
       } catch (error) {
+        this.logger.error(JSON.stringify(error), 'Internal error')
         res.writeHead(500)
         return res.end(JSON.stringify({ message: 'internal error' }))
       }
     })
 
     server.listen(this.port || 3000, undefined, () => {
-      console.log('Server listening')
+      this.logger.info('Server listening', 'Server')
     })
 
     // graceful shutdown
     process.off('SIGINT', () => {
-      console.log('Closing server')
+      this.logger.warning('Closing server', 'Server')
       server.close((err) => process.exit(err ? 1 : 0))
     })
   }
