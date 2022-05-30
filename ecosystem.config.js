@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'typescript-boilerplate',
-      script: 'src/main.js',
+      script: 'dist/main.js',
       instances: 'max',
       exec_mode: 'cluster',
       instance_var: 'INSTANCE_ID',
