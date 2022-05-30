@@ -28,6 +28,10 @@
     "url": "https://github.com/JorgeLNJunior/typescript-boilerplate/issues"
   },
   "homepage": "https://github.com/JorgeLNJunior/typescript-boilerplate#readme",
+  "dependencies": {
+    "@ptkdev/logger": "^1.8.0",
+    "dotenv": "^16.0.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
@@ -52,9 +56,5 @@
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --cache --fix"
-  },
-  "dependencies": {
-    "@ptkdev/logger": "^1.8.0",
-    "dotenv": "^16.0.1"
   }
 }
