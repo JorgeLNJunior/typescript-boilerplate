@@ -1,7 +1,7 @@
 {
   "name": "typescript-boilerplate",
   "version": "0.1.0",
-  "description": "a complete typescript boilerplate",
+  "description": "a simple typescript boilerplate",
   "main": "dist/src/main.js",
   "scripts": {
     "postinstall": "npm list -g pm2@latest || npm install pm2@latest -g",
