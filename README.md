@@ -61,5 +61,5 @@ Simples boilerplate para projetos com typescript
 
 ## Licença
 
-Projeto sob a licença [MIT »](https://github.com/JorgeLNJunior/animes-review-api/blob/master/LICENSE.md).
+Projeto sob a licença [MIT »](https://github.com/JorgeLNJunior/typescript-boilerplate/blob/main/LICENSE.md).
 
