@@ -10,7 +10,7 @@ Simples boilerplate para projetos com typescript
 
 <div align="center" id="badges">
 
-[![Actions Build And Test](https://img.shields.io/github/workflow/status/JorgeLNJunior/typescript-boilerplate/CI/main)](https://github.com/JorgeLNJunior/typescript-boilerplate/actions/workflows/ci.yml)
+[![Actions Build And Test](https://img.shields.io/github/workflow/status/JorgeLNJunior/typescript-boilerplate/CI/main?label=CI)](https://github.com/JorgeLNJunior/typescript-boilerplate/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/JorgeLNJunior/typescript-boilerplate/badge.svg?branch=main)](https://coveralls.io/github/JorgeLNJunior/typescript-boilerplate?branch=main)
 [![License](https://img.shields.io/github/license/JorgeLNJunior/typescript-boilerplate)](https://github.com/JorgeLNJunior/typescript-boilerplate/blob/main/LICENSE.md)
 [![Release](https://img.shields.io/github/v/release/JorgeLNJunior/typescript-boilerplate?color=lgreen)](https://github.com/JorgeLNJunior/typescript-boilerplate/releases)
