@@ -57,7 +57,7 @@ Simples boilerplate para projetos com typescript
 - No seu repositório do GitHub vá até `Settings > Secrets > Actions` e crie as seguintes variáveis.
     - `HEROKU_API_KEY` com sua API Key do Heroku.
     - `HEROKU_APP_NAME` com nome da sua aplicação no Heroku.
-    - `HEROKU_APP_EMAIL` com email da sua conta no Heroku.
+    - `HEROKU_EMAIL` com email da sua conta no Heroku.
 
 ## Licença
 
