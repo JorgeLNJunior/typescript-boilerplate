@@ -6,7 +6,7 @@ describe('ConfigService', () => {
   beforeEach(() => (service = new ConfigService()))
 
   describe('getEnv', () => {
-    test('should return an env', async () => {
+    test('should return an env value', async () => {
       process.env.TEST = 'test'
 
       expect(service.getEnv('TEST')).toBe('test')
