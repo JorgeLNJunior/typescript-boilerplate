@@ -21,7 +21,7 @@ export default class Main {
         if (req.url !== '/') {
           res.writeHead(404)
           return res.end(
-            JSON.stringify({ message: "Route '${req.url}' Not Found" })
+            JSON.stringify({ message: `Route "${req.url}" Not Found` })
           )
         }
 
