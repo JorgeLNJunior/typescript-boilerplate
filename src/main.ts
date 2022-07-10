@@ -49,7 +49,7 @@ export default class Main {
     })
 
     // graceful shutdown
-    process.off('SIGINT', () => {
+    process.on('SIGINT', () => {
       this.logger.info('closing the server...', 'Server')
       server.close((err) => process.exit(err ? 1 : 0))
     })
