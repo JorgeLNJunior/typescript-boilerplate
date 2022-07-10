@@ -9,7 +9,7 @@ export default class Main {
 
   constructor() {
     this.configService = new ConfigService()
-    this.port = this.configService.getEnv<number>('PORT')
+    this.port = this.configService.getEnv<number>('PORT') || 3000
     this.logger = new Logger()
   }
 
@@ -44,7 +44,7 @@ export default class Main {
       }
     })
 
-    server.listen(this.port || 3000, undefined, () => {
+    server.listen(this.port, undefined, () => {
       this.logger.info('Server listening', 'Server')
     })
 
