@@ -40,17 +40,17 @@ export default class Main {
       } catch (error) {
         this.logger.error(JSON.stringify(error), 'Internal error')
         res.writeHead(500)
-        return res.end(JSON.stringify({ message: 'internal error' }))
+        return res.end(JSON.stringify({ message: 'Internal error' }))
       }
     })
 
     server.listen(this.port, undefined, () => {
-      this.logger.info('Server listening', 'Server')
+      this.logger.info(`server listening at port ${this.port}`, 'Server')
     })
 
     // graceful shutdown
     process.off('SIGINT', () => {
-      this.logger.warning('Closing server', 'Server')
+      this.logger.info('closing the server...', 'Server')
       server.close((err) => process.exit(err ? 1 : 0))
     })
   }
