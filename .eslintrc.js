@@ -14,7 +14,7 @@ module.exports = {
     ecmaVersion: 'ES2021',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
   overrides: [
     {
       files: ['**/*.spec.ts'],
@@ -30,6 +30,8 @@ module.exports = {
         semi: false,
         trailingComma: 'none'
       }
-    ]
+    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error'
   }
 }
