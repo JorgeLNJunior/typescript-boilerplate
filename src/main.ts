@@ -1,6 +1,7 @@
-import http from 'http'
-import ConfigService from './services/config.service'
 import Logger from '@ptkdev/logger'
+import http from 'http'
+
+import ConfigService from './services/config.service'
 
 export default class Main {
   private port: number
