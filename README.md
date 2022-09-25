@@ -4,7 +4,7 @@
 
 <h1>Typescript Boilerplate</h1>
 
-Simples boilerplate para projetos com typescript
+Simples boilerplate para projetos Typescript.
 
 </div>
 
@@ -34,7 +34,7 @@ Simples boilerplate para projetos com typescript
 - Conventional commits com [Lint Staged »](https://github.com/okonet/lint-staged#readme), [Husky »](https://github.com/typicode/husky#readme) e [Commit Lint »](https://github.com/conventional-changelog/commitlint#readme)
 - Lint com [ESLint »](https://eslint.org)
 - Testes com [Jest »](https://jestjs.io)
-- Processo de test, build, release e deploy com [GitHub Actions »](https://github.com/features/actions)
+- CI/CD (test, build, release e deploy) com [GitHub Actions »](https://github.com/features/actions)
 
 ## Configuração
 
