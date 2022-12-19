@@ -52,12 +52,12 @@ Simples boilerplate para projetos Typescript.
 - Vá até o [Coverals](https://coveralls.io/repos/new) e adicione seu repositório.
 
 #### Deploy
-- Crie um novo projeto no [Heroku](https://www.heroku.com/).
-- Clique na sua foto no canto superior direito e vá em `Account Settings > API Key` e copie a chave.
+- Crie um novo serviço no [Render](https://render.com/).
+- Clique no menu do canto superior direito e vá em `Account Settings > API Keys` e crie uma nova chave.
 - No seu repositório do GitHub vá até `Settings > Secrets > Actions` e crie as seguintes variáveis.
-    - `HEROKU_API_KEY` com sua API Key do Heroku.
-    - `HEROKU_APP_NAME` com nome da sua aplicação no Heroku.
-    - `HEROKU_EMAIL` com email da sua conta no Heroku.
+    - `HEROKU_API_KEY` com sua API Key do Render.
+    - `RENDER_SERVICE_ID` com o ID do seu serviço do Render.
+- Retire os comentários do step de deploy no arquivo de CI
 
 ## Licença
 
