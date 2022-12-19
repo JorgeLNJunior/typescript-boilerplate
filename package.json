@@ -4,7 +4,6 @@
   "description": "a simple typescript boilerplate",
   "main": "dist/src/main.js",
   "scripts": {
-    "postinstall": "npm list -g pm2 || npm install pm2 -g",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "start": "ts-node src/main.ts",
@@ -27,7 +26,8 @@
   "homepage": "https://github.com/JorgeLNJunior/typescript-boilerplate#readme",
   "dependencies": {
     "@ptkdev/logger": "^1.8.0",
-    "dotenv": "^16.0.2"
+    "dotenv": "^16.0.2",
+    "pm2": "^5.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
